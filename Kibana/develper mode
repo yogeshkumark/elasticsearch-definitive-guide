@@ -1,0 +1,53 @@
+GET _search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+GET hlog-fis3-2020.09.21/_mapping
+GET hlog-aem-web-olb-2020.10.22
+
+GET _cluster/allocation/explain
+GET _cluster/health
+GET _cluster/health
+
+GET hlog-aem-adobe-2020.09.23/_settings
+
+GET hlog-aem-adobe-2020.09.23/_stats
+
+GET _cat/indices?v
+GET _cat/indices?v&s=index,store.size,pri.store.size,s
+
+GET _cat/allocation?v
+GET _cluster/stats  
+GET _cat/allocation?v
+GET _cat/master
+GET _cat/nodeattrs
+
+GET _cat/nodes?v&h=id,ip,name,port,diskTotal,diskUsage,diskAvail,diskUsedPercent,load_15m
+,uptime,indexingIndexFailed
+
+
+GET _cat/nodes?v&h=name,diskUsedPercent 
+
+https://kfdcel01.hlcl.com:30001/
+hlog-apim-2020.08.31][0],
+
+GET _cat/indices?v&s=index,store.size,pri.store.size,
+
+GET hlog-edi-2020.09.24/_ilm/explain
+
+DELETE hlog-aem-web-olb-*
+
+DELETE hlog-fis3-2020.09.25
+DELETE hlog-fis3-2020.09.26
+DELETE hlog-aem-web-olb*
+
+
+DELETE metricbeat*2020.09-0*
+DELETE metricbeat*2020.09.0*
+
+DELETE hlog-*2020.08.*
+DELETE hlog-edi-2020.08.1*
+DELETE hlog-educ-2020.08.*
